@@ -32,10 +32,10 @@ namespace Calculator
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtKetqua = new System.Windows.Forms.TextBox();
+            this.btCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,47 +69,47 @@ namespace Calculator
             this.label3.TabIndex = 2;
             this.label3.Text = "Kết quả";
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 23);
-            this.textBox1.TabIndex = 3;
+            this.txtA.Location = new System.Drawing.Point(156, 68);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(156, 23);
+            this.txtA.TabIndex = 3;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 130);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 23);
-            this.textBox2.TabIndex = 4;
+            this.txtB.Location = new System.Drawing.Point(156, 130);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(156, 23);
+            this.txtB.TabIndex = 4;
             // 
-            // textBox3
+            // txtKetqua
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 23);
-            this.textBox3.TabIndex = 5;
+            this.txtKetqua.Location = new System.Drawing.Point(156, 199);
+            this.txtKetqua.Name = "txtKetqua";
+            this.txtKetqua.Size = new System.Drawing.Size(156, 23);
+            this.txtKetqua.TabIndex = 5;
             // 
-            // button1
+            // btCong
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(277, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btCong.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btCong.Location = new System.Drawing.Point(277, 268);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(75, 28);
+            this.btCong.TabIndex = 6;
+            this.btCong.Text = "Cộng";
+            this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 340);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btCong);
+            this.Controls.Add(this.txtKetqua);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -127,10 +127,10 @@ namespace Calculator
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtKetqua;
+        private System.Windows.Forms.Button btCong;
     }
 }
 
