@@ -36,6 +36,7 @@ namespace Calculator
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtKetqua = new System.Windows.Forms.TextBox();
             this.btCong = new System.Windows.Forms.Button();
+            this.BtTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,19 +93,32 @@ namespace Calculator
             // btCong
             // 
             this.btCong.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btCong.Location = new System.Drawing.Point(277, 268);
+            this.btCong.Location = new System.Drawing.Point(237, 275);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(75, 28);
             this.btCong.TabIndex = 6;
             this.btCong.Text = "Cộng";
             this.btCong.UseVisualStyleBackColor = true;
-            this.btCong.Click += new System.EventHandler(this.button1_Click);
+            this.btCong.Click += new System.EventHandler(this.btCong_Click_1);
+            // 
+            // BtTru
+            // 
+            this.BtTru.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtTru.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtTru.Location = new System.Drawing.Point(127, 275);
+            this.BtTru.Name = "BtTru";
+            this.BtTru.Size = new System.Drawing.Size(62, 28);
+            this.BtTru.TabIndex = 7;
+            this.BtTru.Text = "Trừ";
+            this.BtTru.UseVisualStyleBackColor = true;
+            this.BtTru.Click += new System.EventHandler(this.BtTru_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 340);
+            this.Controls.Add(this.BtTru);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.txtKetqua);
             this.Controls.Add(this.txtB);
@@ -129,6 +143,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtKetqua;
         private System.Windows.Forms.Button btCong;
+        private System.Windows.Forms.Button BtTru;
     }
 }
 
