@@ -47,7 +47,6 @@ namespace Calculator
             this.label1.Size = new System.Drawing.Size(38, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số a";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -116,7 +115,6 @@ namespace Calculator
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Tính toán";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
